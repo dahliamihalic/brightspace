@@ -14,7 +14,7 @@ export const CoursePage = () => {
             setLoading(true);
             setError(null);
 
-            const response = await fetch(`/api/assignments.php?course_id=${courseId}`, {
+            const response = await fetch(`https://web.ics.purdue.edu/~omihalic/brightspace-app/assignments.php?course_id=${courseId}`, {
                 credentials: 'include'
             });
 

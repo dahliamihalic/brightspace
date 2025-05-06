@@ -27,7 +27,7 @@ export const LoginPage = () => {
         setErrors('');
 
         try {
-            const response = await fetch('/api/auth.php', {
+            const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/auth.php', {
                 method: 'POST',
                 credentials: 'include',
                 headers: {

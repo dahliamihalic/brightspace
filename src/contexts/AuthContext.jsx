@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await fetch('/api/check_auth.php', {
+        const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/check_auth.php', {
           credentials: 'include'
         });
         const data = await response.json();
@@ -54,7 +54,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await fetch('/api/logout.php', { 
+      await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/logout.php', { 
         method: 'POST',
         credentials: 'include'
       });

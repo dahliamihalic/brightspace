@@ -7,7 +7,7 @@ export const AssignmentCard = ({ assignment, onUpdate }) => {
     
     const handleSubmit = async () => {
         try {
-            const response = await fetch('/api/assignments.php', {
+            const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/assignments.php', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -12,7 +12,7 @@ export const HomePage = () => {
 
     const fetchCourses = async () => {
         try {
-            const response = await fetch('/api/get_courses.php');
+            const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/get_courses.php');
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
