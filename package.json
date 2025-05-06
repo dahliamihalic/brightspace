@@ -1,5 +1,6 @@
 {
-  "name": "uselessweb",
+  "name": "brightspace",
+  "homepage": "https://dahliamihalic.github.io/brightspace/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

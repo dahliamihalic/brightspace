@@ -22,7 +22,10 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>} />
           <Route path="/assignment" element={<PrivateRoute><AssignmentPage /></PrivateRoute>} />
-          <Route path="/course" element={<PrivateRoute><CoursePage /></PrivateRoute>} />
+          <Route
+            path="/course/:courseId"
+            element={<PrivateRoute><CoursePage /></PrivateRoute>}
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

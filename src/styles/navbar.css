@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-left:9rem;
 }
 
 .navbar img {
@@ -44,8 +45,7 @@
 
 .username {
     font-weight: 600;
-    color: #8e6f3e; /* Purdue gold */
-    margin-top:1rem;
+    color: #8e6f3e;
 }
 
 .navbar-loading {

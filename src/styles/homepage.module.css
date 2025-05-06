@@ -2,9 +2,7 @@
     font-family: Lato, Lucida Sans Unicode, Lucida Grande, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    margin-top: 2.15rem;
-    top: 0;
+    margin-top: 6.3rem;
 }
 
 /* Banner Section */
@@ -52,9 +50,19 @@
 
 .topNav {
     background-color: black;
-    padding: 10px 20px;
+    padding: 4rem 20px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-    border-radius: 4px;
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 2rem;
+    display: flex;
+    align-items: bottom;
+    max-height: 2rem;
 }
 
 .topNav ul {
@@ -62,6 +70,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-left:9rem;
     gap: 20px;
 }
 
@@ -69,7 +78,9 @@
     cursor: pointer;
     color: white;
     font-weight: normal;
+    font-size: 1.1rem;
     font-family: Lato, Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-justify: bottom;
 }
 
 .topNav li:hover {
@@ -111,6 +122,7 @@ h3{
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    color: black;
 }
 
 .courseCard:hover {
