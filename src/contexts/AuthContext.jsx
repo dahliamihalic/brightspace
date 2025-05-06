@@ -14,10 +14,12 @@ export const AuthProvider = ({ children }) => {
     const checkAuth = async () => {
       try {
         const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/check_auth.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           credentials: 'include'
         });
         const data = await response.json();
-        
+
         if (data.authenticated) {
           setAuthState({
             isLogin: true,
@@ -54,7 +56,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/logout.php', { 
+      await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/logout.php', {
         method: 'POST',
         credentials: 'include'
       });
