@@ -24,36 +24,36 @@ export const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmitting(true);
-        setErrors('');
-
+      
         try {
-            const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/auth.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                credentials: 'include',
-                body: JSON.stringify({
-                    username: formData.username.trim(),
-                    password: formData.password.trim()
-                })
-            });
-
-            const data = await response.json();
-
-            if (!response.ok) throw new Error(data.message || "Login failed");
-
-            if (data.status === 'success') {
-                login(data.user); // This now properly updates the context
-                navigate('/');
-            } else {
-                setErrors(data.message || "Login failed");
-            }
+          const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/auth.php', {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+            body: JSON.stringify({
+              username: formData.username.trim(),
+              password: formData.password.trim()
+            })
+          });
+      
+          const data = await response.json();
+          
+          if (!response.ok) throw new Error(data.message || "Login failed");
+          
+          if (data.status === 'success') {
+            login(data.user);
+            navigate('/');
+          } else {
+            setErrors(data.message);
+          }
         } catch (error) {
-            console.error('Login error:', error);
-            setErrors(error.message || "Server error. Please try again.");
+          setErrors(error.message || "Login failed");
         } finally {
-            setSubmitting(false);
+          setSubmitting(false);
         }
-    };
+      };
 
     return (
         <div className={styles.loginContainer}>
