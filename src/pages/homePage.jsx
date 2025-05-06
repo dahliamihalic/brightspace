@@ -53,7 +53,7 @@ export const HomePage = () => {
                 {/* Banner */}
                 <div className={styles.bannerContainer}>
                     <img
-                        src="/banner_gate.jpg"
+                        src="https://web.ics.purdue.edu/~omihalic/brightspace-app/banner_gate.jpg"
                         alt="Purdue University"
                         className={styles.bannerImage}
                     />
@@ -74,7 +74,7 @@ export const HomePage = () => {
                                 {courses.map((course) => (
                                     <Link to={`/course/${course.id}`} key={course.id}>
                                         <div className={styles.courseCard}>
-                                            <img src={course.img} className={styles.courseImage} alt={course.name} />
+                                            <img src={`https://web.ics.purdue.edu/~omihalic/brightspace-app/${course.img}`} className={styles.courseImage} alt={course.name} />
                                             <h4>{course.code}</h4>
                                             <p>{course.name}</p>
                                         </div>

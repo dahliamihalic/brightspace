@@ -28,12 +28,8 @@ export const LoginPage = () => {
 
         try {
             const response = await fetch('https://web.ics.purdue.edu/~omihalic/brightspace-app/auth.php', {
-                method: 'POST',
-                credentials: 'include',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: new URLSearchParams({
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
                     username: formData.username.trim(),
                     password: formData.password.trim()
                 })
