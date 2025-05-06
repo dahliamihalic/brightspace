@@ -1,0 +1,52 @@
+.frontPage {
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Lato, Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-align: center;
+    padding-top:60px;
+}
+
+.frontPage img {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    line-height: 1.5;
+}
+
+.campusList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    width: 100%;
+    max-width: 300px;
+}
+
+.loginButton {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loginButton:hover {
+    background-color: #333;
+}

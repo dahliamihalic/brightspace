@@ -1,0 +1,156 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: Lato, Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-align: center;
+    padding-top:60px;
+    right: 0;
+    left: 0;
+  }
+  
+  .loginBox {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .loginTitle {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .inputLabel {
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    border-color: #0062a3;
+  }
+  
+  .helpLinks {
+    text-align: right;
+    margin-top: -15px;
+  }
+  
+  .helpLink {
+    color: #0062a3;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .helpLink:hover {
+    text-decoration: underline;
+  }
+  
+  .loginButton {
+    background-color: #8e6f3e;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .loginButton:hover {
+    background-color: #614b28;
+  }
+  
+  .legalNotice {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid black;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .accessibility {
+    margin-top: 15px;
+  }
+  
+  .accessibility a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .accessibility a:hover {
+    text-decoration: underline;
+  }
+
+  .helpSection {
+    text-align: right;
+    margin: 10px 0;
+  }
+  
+  .helpLink {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .helpLink:hover {
+    text-decoration: underline;
+  }
+  .errorMessage {
+    color: #d32f2f;
+    background-color: #fde8e8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.loginButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.inputField:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
