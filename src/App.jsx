@@ -11,11 +11,13 @@ import { AssignmentPage } from './pages/assignmentPage'
 import { CoursePage } from './pages/coursePage'
 import { LoginPage } from './pages/loginPage'
 import './styles/global.css'
+import { HashRouter } from 'react-router-dom';
+
 
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/front" element={<FrontPage />} />
@@ -28,7 +30,7 @@ function App() {
           />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </AuthProvider>
   )
 }
