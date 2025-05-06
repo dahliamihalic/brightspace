@@ -13,7 +13,7 @@ export const FrontPage = () => {
     
     return (
         <div className={styles.frontPage}>
-            <img src="/brightspace-app/banner_student1.jpg" alt="Purdue University" />
+            <img src="https://web.ics.purdue.edu/~omihalic/brightspace-app/banner_student1.jpg" alt="Purdue University" />
             <h1 className={styles.title}>
                 Please choose your campus to log in to Purdue University Brightspace.
             </h1>
